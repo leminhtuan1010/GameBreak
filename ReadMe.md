@@ -2,13 +2,13 @@
 ## Giới thiệu
 Trong bài sẽ mô tả từng bước cụ thể để tạo nên pan người chơi và các break
 ## Khởi tạo vẽ pan cho người chơi
-***    
+```sh
 func addPanDanh(){
         pan = UIImageView(frame:CGRect(x: mainViewSize.width / 2 - 50, y: mainViewSize.height - 60, width: 100, height: 50 ))
         pan.backgroundColor = UIColor.blue
         self.addSubview(pan)
     }
-***
+```
     * Về mặt logic thì chúng ta đang vẽ và cũng cấp toạ độ cho chiếc pan và truyền kích thước cho nó.
     * Sau khi khởi tạo được hình dạng cho chiếc pan thì chúng ta sẽ gán màu cho nó bắng cách UIColor.(Màu chúng ta muốn) 
     * Cuối cùng là đưa cpan lên màn hình hiển thị
