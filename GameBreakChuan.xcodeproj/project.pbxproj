@@ -12,6 +12,10 @@
 		CB2E26CA1EF76EE900AA8E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2E26C81EF76EE900AA8E01 /* Main.storyboard */; };
 		CB2E26CC1EF76EE900AA8E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2E26CB1EF76EE900AA8E01 /* Assets.xcassets */; };
 		CB2E26CF1EF76EE900AA8E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2E26CD1EF76EE900AA8E01 /* LaunchScreen.storyboard */; };
+		CB4FC8801EFACC63000EF3DC /* dam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB4FC87F1EFACC63000EF3DC /* dam.mp3 */; };
+		CB4FC8821EFACC69000EF3DC /* ping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB4FC8811EFACC69000EF3DC /* ping.mp3 */; };
+		CBD5F9F71EF7714A004A78A3 /* add.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5F9F61EF7714A004A78A3 /* add.swift */; };
+		CBD5F9F91EF77D2A004A78A3 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD5F9F81EF77D2A004A78A3 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CB2E26CB1EF76EE900AA8E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2E26CE1EF76EE900AA8E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB2E26D01EF76EE900AA8E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4FC87F1EFACC63000EF3DC /* dam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dam.mp3; sourceTree = "<group>"; };
+		CB4FC8811EFACC69000EF3DC /* ping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ping.mp3; sourceTree = "<group>"; };
+		CBD5F9F61EF7714A004A78A3 /* add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = add.swift; sourceTree = "<group>"; };
+		CBD5F9F81EF77D2A004A78A3 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,12 @@
 		CB2E26C31EF76EE900AA8E01 /* GameBreakChuan */ = {
 			isa = PBXGroup;
 			children = (
+				CB4FC8811EFACC69000EF3DC /* ping.mp3 */,
+				CB4FC87F1EFACC63000EF3DC /* dam.mp3 */,
+				CBD5F9F81EF77D2A004A78A3 /* ball.png */,
 				CB2E26C41EF76EE900AA8E01 /* AppDelegate.swift */,
 				CB2E26C61EF76EE900AA8E01 /* ViewController.swift */,
+				CBD5F9F61EF7714A004A78A3 /* add.swift */,
 				CB2E26C81EF76EE900AA8E01 /* Main.storyboard */,
 				CB2E26CB1EF76EE900AA8E01 /* Assets.xcassets */,
 				CB2E26CD1EF76EE900AA8E01 /* LaunchScreen.storyboard */,
@@ -126,6 +138,9 @@
 			files = (
 				CB2E26CF1EF76EE900AA8E01 /* LaunchScreen.storyboard in Resources */,
 				CB2E26CC1EF76EE900AA8E01 /* Assets.xcassets in Resources */,
+				CB4FC8821EFACC69000EF3DC /* ping.mp3 in Resources */,
+				CBD5F9F91EF77D2A004A78A3 /* ball.png in Resources */,
+				CB4FC8801EFACC63000EF3DC /* dam.mp3 in Resources */,
 				CB2E26CA1EF76EE900AA8E01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			files = (
 				CB2E26C71EF76EE900AA8E01 /* ViewController.swift in Sources */,
 				CB2E26C51EF76EE900AA8E01 /* AppDelegate.swift in Sources */,
+				CBD5F9F71EF7714A004A78A3 /* add.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				CB2E26D51EF76EE900AA8E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
