@@ -9,9 +9,9 @@ func addPanDanh(){
         self.addSubview(pan)
     }
 ```
-    * Về mặt logic thì chúng ta đang vẽ và cũng cấp toạ độ cho chiếc pan và truyền kích thước cho nó.
-    * Sau khi khởi tạo được hình dạng cho chiếc pan thì chúng ta sẽ gán màu cho nó bắng cách UIColor.(Màu chúng ta muốn) 
-    * Cuối cùng là đưa cpan lên màn hình hiển thị
+    - Về mặt logic thì chúng ta đang vẽ và cũng cấp toạ độ cho chiếc pan và truyền kích thước cho nó.
+    - Sau khi khởi tạo được hình dạng cho chiếc pan thì chúng ta sẽ gán màu cho nó bắng cách UIColor.(Màu chúng ta muốn) 
+    - Cuối cùng là đưa cpan lên màn hình hiển thị
 ## Kiểm tra vị trí của Pan sau khi được di chuyển
 Kiểm tra toạ độ di chuyển của người chơi.
 ```sh
@@ -22,8 +22,8 @@ Kiểm tra toạ độ di chuyển của người chơi.
         }
     }
 ```
-    * Về mặt logic thì chúng ta sẽ so sánh vị trí ban đầu và vị tri sau khi di chuyển với .began và .changed.
-    * Chúng ta phải xác định vị trí của pan bằng một điểm cố định và dựa vào nó để xác định vị trí của pan đang đứng.
+    - Về mặt logic thì chúng ta sẽ so sánh vị trí ban đầu và vị tri sau khi di chuyển với .began và .changed.
+    - Chúng ta phải xác định vị trí của pan bằng một điểm cố định và dựa vào nó để xác định vị trí của pan đang đứng.
 ## Vẽ các break
 Vẽ các beark trên màn hình
 ```sh
@@ -41,11 +41,11 @@ func hardPanDrawing(){
         self.addSubview(bricksOut)
     }
 ```
-    * về mặt logic chúng ta sẽ vẽ một pan cố định trước và cho khoảng cách để máy tự vẽ các break còn lại.
-    * Ở đây chúng ta sẽ vẽ 3 hàng và 7 cột => sẽ có 21 ô khoảng cách đều nhau nằm trong khoảng chúng ta giới hạn.
-    * Đầu tiên sẽ vẽ 1 pan cố định với toạ độ và kích thước được chúng ta quy định trước.
-    * Sau đó truyền màu vào cho chúng.
-    * Cuối cùng là in chúng ra màn hình
+    - về mặt logic chúng ta sẽ vẽ một pan cố định trước và cho khoảng cách để máy tự vẽ các break còn lại.
+    - Ở đây chúng ta sẽ vẽ 3 hàng và 7 cột => sẽ có 21 ô khoảng cách đều nhau nằm trong khoảng chúng ta giới hạn.
+    - Đầu tiên sẽ vẽ 1 pan cố định với toạ độ và kích thước được chúng ta quy định trước.
+    - Sau đó truyền màu vào cho chúng.
+    - Cuối cùng là in chúng ra màn hình
 ## Kiểm tra va chạm của quả bóng và break 
 Kiểm tra va chạm của quả bóng và các break vừa được vẽ.
 ```sh
@@ -70,6 +70,6 @@ if(ball.center.y < CGFloat(pan1.ballRadians + 120)){
             
         }
 ``` 
-    * Về logic thì sẽ xét va chạm của qủa bóng ở các mặt của break với khoảng và kích thước của quả bóng và break
-    * Tính điều kiện va chạm giữa bóng và break
-    * Với mỗi lần bóng va chạm vào break thì sẽ được truyền về và giảm cấp độ của breal xuống một cấp đến khi nào cấp độ của break trở về 0 thì sẽ xoá break ra khỏi màn hình.
+    - Về logic thì sẽ xét va chạm của qủa bóng ở các mặt của break với khoảng và kích thước của quả bóng và break
+    - Tính điều kiện va chạm giữa bóng và break
+    - Với mỗi lần bóng va chạm vào break thì sẽ được truyền về và giảm cấp độ của breal xuống một cấp đến khi nào cấp độ của break trở về 0 thì sẽ xoá break ra khỏi màn hình.
