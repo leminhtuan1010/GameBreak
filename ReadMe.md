@@ -14,19 +14,19 @@ func addPanDanh(){
     * Cuối cùng là đưa cpan lên màn hình hiển thị
 ## Kiểm tra vị trí của Pan sau khi được di chuyển
 Kiểm tra toạ độ di chuyển của người chơi.
-***
+```sh
     func onPan(panGesture: UIPanGestureRecognizer){
         if (panGesture.state == .began || panGesture.state == .changed){
             let poin = panGesture.location(in: self.view)
             self.pan.center = CGPoint(x: poin.x, y: pan.center.y)
         }
     }
-***
+```
     * Về mặt logic thì chúng ta sẽ so sánh vị trí ban đầu và vị tri sau khi di chuyển với .began và .changed.
     * Chúng ta phải xác định vị trí của pan bằng một điểm cố định và dựa vào nó để xác định vị trí của pan đang đứng.
 ## Vẽ các break
 Vẽ các beark trên màn hình
-***
+```sh
 func hardPanDrawing(){
         for hang in 0..<3{
             for cot in 0..<7{
@@ -40,7 +40,7 @@ func hardPanDrawing(){
         bricksOut = UIImageView(frame: CGRect(x: self.bounds.size.width + 300, y: 100, width: 20, height: 20))
         self.addSubview(bricksOut)
     }
-***
+```
     * về mặt logic chúng ta sẽ vẽ một pan cố định trước và cho khoảng cách để máy tự vẽ các break còn lại.
     * Ở đây chúng ta sẽ vẽ 3 hàng và 7 cột => sẽ có 21 ô khoảng cách đều nhau nằm trong khoảng chúng ta giới hạn.
     * Đầu tiên sẽ vẽ 1 pan cố định với toạ độ và kích thước được chúng ta quy định trước.
@@ -48,7 +48,7 @@ func hardPanDrawing(){
     * Cuối cùng là in chúng ra màn hình
 ## Kiểm tra va chạm của quả bóng và break 
 Kiểm tra va chạm của quả bóng và các break vừa được vẽ.
-***
+```sh
 if(ball.center.y < CGFloat(pan1.ballRadians + 120)){
             for i in 0..<21{ // điều kiện va chạm của bóng vào break
                 if (ball.center.y <= pan1.bricks[i].center.y + CGFloat(25 + 10) && ball.center.x >= (pan1.bricks[i].center.x - (view.bounds.size.width - 80) / 14 - CGFloat(pan1.ballRadians)) && ball.center.x <= (pan1.bricks[i].center.x + (view.bounds.size.width - 80) / 14 + CGFloat(pan1.ballRadians))){
@@ -69,7 +69,7 @@ if(ball.center.y < CGFloat(pan1.ballRadians + 120)){
             }
             
         }
-*** 
+``` 
     * Về logic thì sẽ xét va chạm của qủa bóng ở các mặt của break với khoảng và kích thước của quả bóng và break
     * Tính điều kiện va chạm giữa bóng và break
     * Với mỗi lần bóng va chạm vào break thì sẽ được truyền về và giảm cấp độ của breal xuống một cấp đến khi nào cấp độ của break trở về 0 thì sẽ xoá break ra khỏi màn hình.
